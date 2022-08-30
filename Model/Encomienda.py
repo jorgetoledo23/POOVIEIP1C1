@@ -11,5 +11,5 @@ class Encomienda:
         self.destinatario = des
 
     def getInfo(self):
-        #return f"N° Encomienda: {self.id}, Fecha: {self.fecha}, Remitente: {self.remitente}, Destinatario: {self.destinatario}"
-        return "N° Encomienda: " + self.id + ", Fecha: " + self.fecha + ", Remitente: " + self.remitente + ", Destinatario: " + self.destinatario + ""
+        return f"N° Encomienda: {self.id}, Fecha: {self.fecha}, Remitente: {self.remitente}, Destinatario: {self.destinatario}"
+        #return "N° Encomienda:"N° Encomienda: " + self.id + ", Fecha: " + self.fecha + ", Remitente: " + self.remitente + ", Destinatario: " + self.destinatario + " + self.id + ", Fecha: " + self.fecha + ", Remitente: " + self.remitente + ", Destinatario: " + self.destinatario + ""
