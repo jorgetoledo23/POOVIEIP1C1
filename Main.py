@@ -2,8 +2,7 @@ from Model.Cliente import *
 from Model.Encomienda import *
 import datetime
 
-listaClientes = []
-listaEncomiendas = []
+-
 
 while (True):
 
