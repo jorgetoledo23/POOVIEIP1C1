@@ -2,8 +2,6 @@ from Model.Cliente import *
 from Model.Encomienda import *
 import datetime
 
--
-
 while (True):
 
     print("Sistema de Encomiendas")
