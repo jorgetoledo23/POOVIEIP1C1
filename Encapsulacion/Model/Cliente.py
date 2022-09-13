@@ -1,3 +1,5 @@
+#Publico => Por Defecto => Cualquier class puede realizar modificaciones o otras atributos de otra class
+#Privado => Protegemos los atributos de cambios no autorizados
 class Cliente:
     
     def __init__(self, rut, nombres, apellidos):
