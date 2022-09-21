@@ -23,7 +23,7 @@ class Personaje:
         return self.__Vida
    
     def Atacar(self, Objetivo):
-        valorGolpe = self.__Fuerza / 15 + 10
+        valorGolpe = int(self.__Fuerza / 15 + 10)
         Objetivo.setVida(valorGolpe)
 
     def Comprar(self, ItemComprado):

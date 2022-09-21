@@ -11,14 +11,16 @@ P2 = Personaje("Player 2")
 
 while True:
     os.system("cls")
-    print(f"Turno Actual: {Turno}")
+    print(f"Turno Actual: {Turno}\n")
 
     #Stats
-    print(f"Stats Player 1: Vida: {P1.getVida()}, Fuerza: {P1.getFuerza()}, Oro: {P1.getOro()}")
-    print(f"Stats Player 2: Vida: {P2.getVida()}, Fuerza: {P2.getFuerza()}, Oro: {P2.getOro()}")
+    print(f"Stats Player 1:\nVida:{P1.getVida()}\nFuerza: {P1.getFuerza()}\nOro: {P1.getOro()}\n")
+    print(f"Stats Player 2:\nVida: {P2.getVida()}\nFuerza: {P2.getFuerza()}\nOro: {P2.getOro()}\n")
 
-    print("[1] - Atacar")
-    print("[2] - Comprar")
+
+    print("Opciones: \n")
+    print("[1] - Atacar\n")
+    print("[2] - Comprar\n")
 
     opcion = input("Selecciona tu Jugada: ")
 
