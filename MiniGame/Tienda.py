@@ -1,9 +1,9 @@
 from Modelo.Item import * 
 Tiendita = []
 
-Item1 = Item("Espadon", 0, 120,200)
-Item2 = Item("Escudo", 100, 0, 150)
-Item3 = Item("Cuchillo", 0, 30, 50)
+Item1 = Item("Espadon", 0, 120,200) #1
+Item2 = Item("Escudo", 100, 0, 150) #2
+Item3 = Item("Cuchillo", 0, 30, 50) #3
 Item4 = Item("Armadura", 300, -30, 300)
 Item5 = Item("Botiquin", 50, 0, 250)
 Item6 = Item("Pocion de Ataque", 0, 15, 30)
