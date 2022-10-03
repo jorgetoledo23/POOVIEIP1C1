@@ -1,0 +1,27 @@
+Evaluacion N1:
+
+03 Octubre 2022
+
+Entrega: 03 Octubre 2022 22:30 (Limite)
+
+
+Puntaje Maximo 50
+Cada caracteristica 10.
+
+
+1. Limitar Inventario a 6 Items.
+    (Si esta lleno e intenta comprar dar un mensaje o bloquear la compra)
+    (No perder el turno en caso de inventario lleno)
+
+2. Validar la compra:
+    (Que el programa NO deje de funcionar si compro un item que no existe.)
+    (NO perder el turno si el item no existe en la tienda)
+
+3. Despues de cada Ataque, mostrar el daño inflinjido al rival.
+
+4. Agregar un contador general de turnos. Al final del juego mostrar
+    cuantos turnos se jugaron.
+
+5. Opcion de rendirse para los jugadores.
+    (Preguntar si esta seguro antes de rendirse)
+    (Gana el Jugador que no se rinda)
