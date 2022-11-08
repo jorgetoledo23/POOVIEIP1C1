@@ -2,6 +2,7 @@ import mysql.connector
 from mysql.connector import errorcode
 
 class DAO:
+    #Data Access Object
     def __init__(self):
         try:
             self.cnx = mysql.connector.connect(
