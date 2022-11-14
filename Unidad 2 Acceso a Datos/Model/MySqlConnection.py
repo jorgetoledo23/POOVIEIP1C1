@@ -18,3 +18,28 @@ class DAO:
                 print("Base de Datos no Existe")
             else:
                 print(err)
+
+    def InsertarItem(self, Item):
+        addItem = ("INSERT INTO Items (Nombre, Vida, Fuerza, Armadura, Coste)"
+                "VALUES (%s, %s, %s, %s, %s)")
+
+        dataItem = (Item.getNombre(), Item.getVida(), Item.getFuerza(), Item.getArmadura(), Item.getCoste())
+
+        cursor = self.cnx.cursor()
+        cursor.execute(addItem, dataItem)
+        self.cnx.commit()
+        cursor.close()
+        #self.cnx.close()
+
+    def LeerItems(self):
+        cursor = self.cnx.cursor()
+        cursor.execute("SELECT * FROM Items")
+
+        listaItems = []
+
+        for(ItemId, Nombre, Vida, Fuerza, Coste, Armadura) in cursor:
+            from Model.Item import Item
+            i = Item(ItemId, Nombre, Vida, Fuerza, Coste, Armadura)
+            listaItems.append(i)
+        
+        return listaItems
