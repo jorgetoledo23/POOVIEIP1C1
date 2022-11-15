@@ -6,10 +6,10 @@ class DAO:
     def __init__(self):
         try:
             self.cnx = mysql.connector.connect(
-                user='sql10549760', 
-                password='n4AtcPLJrd',
-                host='sql10.freemysqlhosting.net',
-                database='sql10549760')
+                user='root', 
+                password='',
+                host='localhost',
+                database='DBPOOIEIV')
             print("Coneccion Establecida")
         except mysql.connector.Error as err:
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
@@ -43,3 +43,18 @@ class DAO:
             listaItems.append(i)
         
         return listaItems
+
+
+    def EliminarItem(self, ItemId):
+        cursor = self.cnx.cursor()
+        consulta = ("DELETE FROM Items WHERE ItemId = %s")
+        data = (ItemId,)
+        cursor.execute(consulta, data)
+        self.cnx.commit()
+
+    def ActualizarItem(self, Item):
+        cursor = self.cnx.cursor()
+        upt_item = ("UPDATE Items SET Nombre = %s, Vida = %s, Fuerza = %s, Armadura = %s, Coste = %s WHERE ItemID = %s")
+        data_item = (Item.getNombre(), Item.getVida(), Item.getFuerza(), Item.getArmadura(), Item.getCoste(), Item.getItemId())
+        cursor.execute(upt_item, data_item)
+        self.cnx.commit()
